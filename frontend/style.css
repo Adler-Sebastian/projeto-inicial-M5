@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0b023a;
+    font-family: Arial, sans-serif;
+    color: #f7f7fa;
+   
+}
+
+header {
+    text-align: center;
+    margin: 15px;
+}
+/* Estilizando a seção principal */
+.main section{
+    width: 100%;
+    height: 100vh;
+}
+/* Estilizando o cabeçalho */
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header ul li{
+    list-style: none;
+}
+
+
+.header ul li a:hover{
+    color: #0b023a;
+    transition: all.4s;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* Estilizando o conteúdo principal */
+.main-content{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilizando o campo de imagem */
+.field-img{
+    position: relative;
+    height: 500px;
+}
+.img-main{
+    width: 600px;
+   
+}
+/* Estilizando o título principal */
+.main-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+/* ESTILO DE FORMULARIO DE CONTATO */
+section.form{
+    height: 100vh;
+    padding: 80px 4%;
+}
+h2.title-form{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 230px;
+}
+h2.title-form span{
+    color: #0b023a;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #6b6b6bce;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: #bbbbbb;
+}
+
+form textarea::placeholder{
+    color: #bbbbbb;
+}
+
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .send{
+    margin-top: 20px;
+}
+
+form .send input{
+    width: 120px;
+    background-color:#0b023a;
+    color: #000000b4;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+form .send input:hover{
+    transform: scale(0.96);
+}
+
+
+form .send input:active{
+    transform: scale(1);
+}
+/* Estilizando a seção sobre */
+.section-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+}
+.img-about{
+    width: 500px;
+
+}
+
+.field-text-about{
+    width: 40%;
+}
+.text-about{
+    color: white;
+    font-size: 18px;
+}
+/* Estilizando a seção de serviços */
+.services-section{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.services-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.services-section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin: 70px 0 0 0;
+}
+/* Estilizando o cartão de serviço */
+.card{
+    width: 350px !important;
+    height: 400px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    gap: 25px;
+    box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.209);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: all.4s;
+}
+.title-card{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.card i{
+    font-size: 60px;
+    color: #0b023a;
+}
+
+.btn-card{
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #0b023a;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px 4px rgba(0, 0, 0, 0.209);
+}
+
+.btn-card:active{
+    transform: scale(0.96);
+}
+/* Botão de contato fixo na parte inferior direita da tela */
+.contact-us{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    bottom: 10px;text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: white;
+    background-color: #3585b4;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px 6px rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    transition: all.4s;
+}
+.contact-us:hover{
+    transform: scale(0.96);
+}
+
+.contact-us:active{
+    transform: scale(1.1);
+}
+.contact-us i{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size:50px;
+}
+/* Seção de depoimentos, exibindo os depoimentos em uma coluna centralizada */
+.section-depositions{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.title-depositions{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.subtitle-depositions{
+    color: #3585b4;
+    font-size: 46px;
+    margin: 15px 0;
+}
+.sub-text{
+    color: white;
+    text-align: center;
+}
+
+/*api diary*/
+.title {
+    color: #f7f7fa;
+}
+
+.notes {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin-bottom: 9vh;
+}
+
+/* Section Add Note */
+.add_note_article{
+    background-color:  #0b023a;
+    width: 50vw;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.add_note_article  label {
+    font-size: 14px;
+    width: 100%;
+    
+   }
+
+.add_note_article .stress-level {
+    width: 85%;
+    margin-bottom: 10px; /* Ajuste conforme necessário */
+}   
+   
+.add_note_article input {
+    outline: none;
+    padding: 5px 10px; 
+    width: 100%;
+    margin-bottom: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   }
+
+.add_note_article select,
+.add_note_article textarea {
+    width: 85%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #f7f7fa;
+    background-color: #fff;
+    color: #000;
+}
+
+.add_note_article select option {
+    color: #000;
+}
+
+.add_note_article textarea {
+    resize: none;
+    height: 100px;
+}
+
+.add_note_article input[type="submit"],
+.delete_all_note_btn {
+    width: 85%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #f7f7fa;
+    background-color: #4caf50;
+    color: #f7f7fa;
+    font-weight: bold;
+}
+
+.delete_all_note_btn {
+    background-color: rgb(212, 73, 73);
+}
+
+/* Section Your Notes */
+.your_note {
+    background-color: #fff;
+    width: 20vw;
+    height: 30vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 10px;
+    color: #000;
+}
+
+
+.your_note input,
+.your_note textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f7f7fa;
+    color: #000;
+}
+
+.your_note input {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #77a2dd;
+}
+
+.your_note textarea {
+    resize: none;
+    height: 60%;
+}
+
+.your_note img {
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: 5px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
