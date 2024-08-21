@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <header>
+        <h1 class="title">Diary</h1>
+    </header>
+
+    <section class="add-note">
+        <article class="add_note_article">
+            <form id="noteForm">
+                <input type="text" name="title" id="title" placeholder="Note Title" required>
+               
+                <!-- Campo de seleção de humor -->
+                <label for="mood">Mood:</label>
+                <select name="mood" id="mood" required>
+                    <option value="" disabled selected>Select your mood</option>
+                </select>
+            
+                <label for="stressLevel">  Stress Level(0-10):</label>
+                <input type="number" name="stressLevel" id="stressLevel" min="0" max="10" required>
+            
+                <label for="anxietyLevel">Anxiety Level (0-10):</label>
+                <input type="number" name="anxietyLevel" id="anxietyLevel" min="0" max="10" required>
+            
+                <textarea name="reflection" id="reflection" placeholder="Note Details" required></textarea>
+            
+                <div class="button-group">
+                    <input type="submit" value="Adicionar depoimento" class="add_note_btn">
+                    <button type="button" class="delete_all_note_btn" onclick="deleteAllNotes()">Deletar</button>
+                </div>
+            </form>
+        </article>
+    </section>
+    <section class="notes">
+
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Rodapé da página -->
+  <footer>
+      Copyright &copy; Squard 3
+  </footer>    
+</body>
+</html>

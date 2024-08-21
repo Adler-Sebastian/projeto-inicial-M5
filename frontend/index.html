@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina inicial</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
+</head>
+
+<body>
+    <header class="header">
+       
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#diary">Diary</a></li>
+            <li><a href="#livros">Livros</a></li>
+            <li><a href="#frases">Frases</a></li>
+
+
+        </ul>
+    </header>
+
+    <section class="main section" id="home">
+
+        <main class="main-content">
+            <div class="field-img">
+                <img class="img-main" src="/" alt="">
+            </div>
+            <h1 class="main-title">Apoio <span class="textGreen">à Saúde Mental</span><br> para um Dia a Dia Mais Saudável</h1>
+            <a class="btn-main" href="#form">Saiba mais</a>
+        </main>
+        
+        <section class="section-about" id="about">
+            <img class="img-about" src="/" alt="">
+            <article class="field-text-about">
+                <p class="text-about">A EquilibriumAPI visa contribuir e ser uma plataforma de apoio para tratamento da saúde mental, oferecendo interações e aplicações que ajudem as pessoas que necessitam de um app que seja parte essencial para a manutenção de um dia a dia mais saudável durante sua caminhada.</p>
+            </article>
+        </section>
+        
+    <section class="services-section" id="services">
+        <h2 class="services-title">Serviços</h2>
+        <ul>
+            <li class="card">
+                <h3 class="title-card">Registro de Notas Diárias</h3>
+                <i class="fa-solid fa-pen"></i>
+                <p class="texto-card">Um espaço onde os usuários podem registrar seus sentimentos e acontecimentos diários, promovendo um ambiente seguro para desabafos.</p>
+                <a class="btn-card" href="#form">Saiba mais</a>
+            </li>
+            <li class="card">
+                <h3 class="title-card">Área de Dicas</h3>
+                <i class="fa-solid fa-lightbulb"></i>
+                <p class="texto-card">Oferece sugestões e notificações, categorizadas para ajudar os usuários a terem dias mais leves e produtivos.</p>
+                <a class="btn-card" href="#form">Saiba mais</a>
+            </li>
+            <li class="card">
+                <h3 class="title-card">Promoção da Leitura</h3>
+                <i class="fa-solid fa-book"></i>
+                <p class="texto-card">Incentiva a leitura como uma prática para momentos de tranquilidade e criatividade, oferecendo opções de leitura que ajudam a aliviar o estresse.</p>
+                <a class="btn-card" href="#form">Saiba mais</a>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="form" id="form">
+        <h2 class="title-form">FALE <span>CONOSCO.</span></h2>
+        <form action="" method="POST">
+            <input type="text" name="name" placeholder="Seu nome:" required>
+            <input type="email" name="email" placeholder="Seu e-mail:" required>
+            <input type="text" name="numero" placeholder="Seu celular:" required>
+
+            <textarea cols="30" rows="10" name="mensagem" placeholder="Observações:" required></textarea>
+            <div class="send"><input type="submit" value="ENVIAR"></div>
+
+            <input type="hidden" name="_subject" value="Novo Contato!">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+        </div>
+    </section><!--Formulario-->
+    <div class="contact-us" id="faleIcon">
+        <i class="fa-solid fa-headset"></i>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Adler-Sebastian/projeto-inicial-M5"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="contact-info">
+                <p><a href=""></a></p>
+                <p><a href="tel:(85)40028922">(85)40028922</a></p>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">our Team</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Squad 3</span></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/src/js/script.js"></script>
 </body>
+
 </html>
